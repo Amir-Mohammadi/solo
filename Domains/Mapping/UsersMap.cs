@@ -12,6 +12,7 @@ namespace Solo.Domains
 
             builder.Property(x => x.Id);
             builder.Property(x => x.UserName);
+            builder.Property(x => x.Email);
             builder.Property(x => x.BirthDate).HasColumnType("smalldatetime");
             builder.Property(x => x.RowVersion).IsRowVersion();
 
